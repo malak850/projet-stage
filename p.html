@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #close {
+            float: left;
+            margin-top: 30px;
+        }
+
+        #search {
+            float: right;
+            margin-top: 30px;
+        }
+        #closeData{
+            
+        }
+    </style>
+</head>
+
+<body>
+    <dialog id="dialogSearch">
+        <label>client ID</label>
+        <input type="text">
+        <div>
+            <button id="close">Close</button>
+            <button id="search">Search</button>
+        </div>
+    </dialog>
+    <button>Search for a client</button>
+
+    <dialog id="showData">
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+        <button id="closeData">close</button>
+    </dialog>
+</body>
+<script>
+    const dialogSearch = document.getElementById("dialogSearch");
+    const showButton = document.querySelector("dialog + button");
+    const closeButton = document.getElementById("close");
+    const searchButton = document.getElementById("search")
+    const showData = document.getElementById("showData")
+    const closeData=document.getElementById("closeData")
+
+    showButton.addEventListener("click", () => {
+        dialogSearch.showModal();
+    });
+
+    closeButton.addEventListener("click", () => {
+        dialogSearch.close();
+    });
+    searchButton.addEventListener("click", () => {
+        dialogSearch.close();
+        showData.showModal();
+    });
+    closeData.addEventListener("click",()=>{
+        showData.close()
+    })
+
+</script>
+
+</html>
+        

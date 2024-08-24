@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - Assurances BENCHEMSI & SAIARH</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        header{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa03mKJXXsMZ-Z-cLXJm50ier9KptECdb23Q&ss');
+            background-position:right;
+            background-repeat: no-repeat;
+            padding: 5px 0;
+
+        }
+        body {
+            background-image: url('https://upload.wikimedia.org/wikipedia/fr/1/19/RMA-Watanya_logo.jpg');
+            background-size:contain;
+            background-position:center;
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-decoration:overline;
+            text-align: center;
+        }
+        footer{
+            background-color: #253044;
+            color: white;
+            text-align: center;
+        }
+        main {
+            min-height: 100vh; /* 100vh signifie 100% de la hauteur de la fenêtre */
+            margin: 0;
+            padding:0;
+        }
+        button{
+            color:darkblue;
+        }
+         input{color: black; 
+            display: flex;
+            flex-direction: column; /* Aligne les éléments verticalement */
+            align-items: flex-start; /* Aligne les éléments à gauche */
+            width: 300px; /* Largeur du conteneur */
+            }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assurances BENCHEMSI & SAIARH</h1>
+        <nav>
+            <ul>
+                <li><a href="projet2.html"></a></li><br>
+                <li><a href="SOCIETE.html"></a><button>SOCIETE</button></li><br>
+                <li><a href="PARTICULIER.html"></a><button>PARTICULIER</button></li><br>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section >
+            <input type="submit" value="MODIFICATION🖋️">
+            <input type="submit" value="RECHERCHE🔍">
+            <input type="submit" value="NOUVEAU🆕">
+            <input type="submit" value="SUPPRIMER🚮">
+            <h1>LISTE CLIENTS</h1><br><br> <br><br>
+            <table>
+                <button>Search for a client</button>
+                 <dialog id="showData"
+                <tr>
+                    <td><label for="nom">INTITULE :</label></td>
+                    <td><input type="text" id="nom" name="nom" placeholder="entrer votre intitule" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">EMAIL :</label></td><br>
+                    <td><input type="email" id="email" name="email"  placeholder="entrer votre email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telephone">TELEPHONE :</label></td>
+                    <td><input type="tel" id="telephone" name="telephone" placeholder="entrer le numero de telephone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="numero client">NUMERO CLIENT:</label></td>
+                    <td><input id="client" name="client" placeholder="entrer votre numero" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="ville"> VILLE :</label></td>
+                    <td><input type="ville" id="ville" name="ville" placeholder="entrer la ville" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="dossier"> NUMERO DOSSIER: </label></td>
+                    <td> <input type="dossier" id="dossier" name="dossier" placeholder="entrer le numero de dossier" required></td>
+                </tr>
+                <tr>
+                    <td><label for="c.i.n">NUMERO C.I.N: </label></td>
+                    <td><input type="cin" id="cin" name="cin" placeholder="entrer votre c.i.n" required></td>
+                </tr>
+                <tr> 
+                    <td><label for="profession">PROFESSION:</label></td>
+                    <td><input type="profession" id="profession" name="profession" placeholder="entrer votre profession" required></td><br>
+                </tr>
+            </table>
+            <form action="/soumettre" method="post">
+                <label for="debit">report debit :</label>
+                <input type="number"debit name="debit" required><br><br>
+    
+                <label for="email">report credit :</label>
+                <input type="number" name="report credit" required><br>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Envoyer">
+                    </td>
+                </tr>
+            </form>
+
+       </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Assurances BENCHEMSI & SAIARH</p>
+    </footer>
+</body>
+</html>

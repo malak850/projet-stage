@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #172541;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #253044;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2a3142;
+}
+
+body
+{ background-image: url("https://boursenews.ma/uploads/actualites/637497241f3bc_AF1QipP69mzJuGLk_q-mNyLQ-7FwFBsn-KhkoyyZgevuw1600-h1000-k-no.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+.content {
+    height: 2000px; /* Hauteur importante pour forcer le scroll */
+    background-color: #e0e0e0;
+}
+main {
+    min-height: 100vh; /* 100vh signifie 100% de la hauteur de la fenêtre */
+    margin: 0;
+    padding:0;
+}
+section h2{
+    color:rgb(169, 19, 146);
+}
+section p{
+    color: #e0e0e0;
+}
+h2{
+    text-decoration: underline;
+}
