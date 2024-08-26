@@ -124,7 +124,7 @@
                 </tr>
                 <tr >
                     <td>
-                        <button>Close</button>
+                        <button id="closeDialogSearch">Close</button>
                         <button id="searchButton">Search for a client</button>
                     </td>
                 </tr>
@@ -155,8 +155,12 @@
 <script>
     const searchForClient = document.getElementById("searchForClient")
     const dialogSearch = document.getElementById("dialogSearch")
+    const closeDialogSearch =document.getElementById("closeDialogSearch")
     searchForClient.addEventListener("click", () => {
         dialogSearch.showModal()
+    })
+    closeDialogSearch.addEventListener("click",()=>{
+        dialogSearch.close()
     })
 </script>
 
